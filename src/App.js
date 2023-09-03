@@ -1,10 +1,12 @@
 
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css"
+import Navbar from './components/navbar'; // Updated import statement
 
 function App() {
   return (
-    <h2>Portolio Project</h2>
+    <Navbar/>
+    
   );
 }
 
