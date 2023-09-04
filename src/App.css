@@ -40,6 +40,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@400;500;700&family=Ubuntu&family=Work+Sans:wght@300&display=swap');
 body{
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 :root{
@@ -53,11 +54,12 @@ body{
 /*************************** NAVBAR *****************************/
 .logo{
   width: 5.375rem;
-  
-
 }
 
 /*****************MENUE LINK***********************/
+.navbar{
+  z-index: 5;
+}
 nav a.nav-link{
   /* font-weight: 500; */
   letter-spacing: 0.0375rem;
@@ -94,7 +96,7 @@ nav ul li{
   background-size: cover;
   background-position: center;
   height: 90vh;
-  z-index: -1;
+  /* z-index: -1; */
   /* opacity: 0.8; */
 }
 
@@ -134,7 +136,7 @@ nav ul li{
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
-  z-index: 11;
+  z-index: 5;
 }
 
 canvas {
