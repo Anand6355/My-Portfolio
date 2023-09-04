@@ -39,13 +39,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@400;500;700&family=Ubuntu&family=Work+Sans:wght@300&display=swap');
 body{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root{
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
+  --primary-red:#ef4035;
+  --primary-hover-red: #f33501;
+
 }
 /*************************** NAVBAR *****************************/
 .logo{
@@ -82,3 +85,72 @@ nav ul li{
 .navbar-nav > li a:hover{
   border-top: 0.1875rem solid var(--primary-orange);
 }
+
+/*************************** Header *****************************/
+
+.header-wraper{
+  position: relative;
+  background:url(backGround.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  z-index: -1;
+  /* opacity: 0.8; */
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content:center ;
+  align-items:center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  /* z-index: 5; */
+  
+}
+
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+
+}
+
+/*************************** Typed Text *****************************/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+/********************************************************/
+
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  z-index: 11;
+}
+
+canvas {
+  position: absolute;
+  top: 10vh;
+  height: 90vh;
+  z-index: 1;
+  width: 100vw;
+
+}
+
+/* ---- tsparticles container ---- */
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
